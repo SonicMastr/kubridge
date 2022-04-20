@@ -46,7 +46,7 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
   SceUInt32 field_54;
 } SceKernelAllocMemBlockKernelOpt;
 
-SceUID kuKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
+SceUID kuKernelAllocMemBlock(const char *name, unsigned int type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
 
 void kuKernelFlushCaches(const void *ptr, SceSize len);
 

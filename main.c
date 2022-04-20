@@ -19,7 +19,7 @@ void kuKernelFlushCaches(const void *ptr, SceSize len) {
   _ksceKernelCpuIcacheInvalidateRange((void *)ptr_aligned, len);
 }
 
-SceUID kuKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt) {
+SceUID kuKernelAllocMemBlock(const char *name, unsigned int type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt) {
   char k_name[32];
   SceKernelAllocMemBlockKernelOpt k_opt;
   uint32_t state;
